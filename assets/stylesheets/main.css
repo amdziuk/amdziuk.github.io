@@ -1,6 +1,7 @@
 header {
-  font-family: 'Raleway', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;  
   position: relative;
+  width: 100%;
+  font-family: 'Raleway', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;  
   background-color: #ECF1E6;
   color: #2C4E00;
   text-align: center;
@@ -20,6 +21,9 @@ header {
 }
 
 .header-description {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 300;
   font-size: 3em;
   text-align: left;
@@ -51,6 +55,7 @@ header {
   border-right: 1.2em solid transparent;
   border-top: 1.2em solid #ECF1E6;
 }
+
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
   header {
@@ -70,6 +75,7 @@ header {
 
   .header-description {
     margin-left: 1em;
+    width: 16em;
     font-size: 1.1em;
     line-height: 1.5em;
     margin-bottom: 1em;
@@ -94,6 +100,35 @@ header {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+  .header-container {
+    padding-top: 7em;
+    padding-bottom: 7em;
+    width: 50em;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    overflow: hidden;
+  }
+
+  #avatar {
+    float: left;
+  }
+
+  .header-content {
+    float: left;
+    margin-left: 3em;
+  }
+
+  .header-description {
+    width: 30em;
+    margin-left: 0em;
+  }
+
+  .header-contact a {
+    font-size: 2.5em;
+    padding-left: 0;
+    padding-right: 1em;
+  }
 
 }
 
