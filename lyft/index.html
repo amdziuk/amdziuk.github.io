@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Distance Matrix service</title>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  <body>
+    <div id="content-pane">
+      <div id="examples">
+        Examples For Your Convenience:<br/>
+        Dev Bootcamp: (37.78463, -122.39741)<br/>
+        Lyft HQ: (37.76034, -122.41267)<br/>
+        Dolores Park: (37.75994, -122.42703)<br/>
+        Pier 39: (37.80790, -122.41055)<br/>
+      </div>
+      <div id="inputs">
+        <form>
+        Driver A Origin: <input type="text" name="aOriginLat" placeholder="Latitude"><input type="text" name="aOriginLong" placeholder="Longitude"><br>
+        Driver A Destin: <input type="text" name="aDestLat" placeholder="Latitude"><input type="text" name="aDestLong" placeholder="Longitude"><br>
+        Driver B Origin: <input type="text" name="bOriginLat" placeholder="Latitude"><input type="text" name="bOriginLong" placeholder="Longitude"><br>
+        Driver B Destin: <input type="text" name="bDestLat" placeholder="Latitude"><input type="text" name="bDestLong" placeholder="Longitude"><br>
+        </form>
+        <p><button type="button" onclick="calculateDistances();">Calculate
+          distances</button></p>
+      </div>
+      <div id="outputDiv"></div>
+    </div>
+    <div id="map-canvas"></div>
+  <script src="route.js"></script>
+  </body>
+</html>
