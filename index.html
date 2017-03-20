@@ -1,41 +1,251 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-
-  <title>Adam Dziuk - Software Engineer</title>
-  <meta name="description" content="Personal Portfolio for Adam Dziuk">
-  <meta name="author" content="Adam Dziuk">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  <link rel="stylesheet" href="assets/stylesheets/reset.css">
-  <link rel="stylesheet" href="assets/stylesheets/main.css">
-  <link rel="stylesheet" href="assets/stylesheets/font-awesome.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Raleway:200,300' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adam Dziuk - Software Engineer</title>
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <div class="header-container">
-      <div class="logo"><img src="assets/images/avatar.jpg" id="avatar"></div>
-      <div class="header-content">
-        <div class="header-name">
-          <h1>Adam Dziuk</h1>
-        </div>
-        <div class="header-description">
-          <p>Software Engineer. Dev Bootcamp Graduate. Aspiring Musician and Photographer. I strive to create well-tested, meaningful code. What can we build together?</p>
-        </div>
-        <div class="header-contact">
-          <ul>
-            <li><a href="https://www.linkedin.com/in/amdziuk" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
-            <li><a href="https://github.com/amdziuk" target="_blank"><i class="fa fa-git-square"></i></a></li>
-            <li><a href="mailto:amdziuk@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
-          </ul>
-        </div>
-      </div>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-    <div class="divider"></div>
-  </header>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <img src="images/avatar.jpg" id="avatar">
+            <h1>Adam Dziuk</h1>
+            <h2>Software Engineer</h2>
+            <!-- TODO: Add resume here -->
+            <!--<a href="#" class="btn-rounded-white">Download Resume</a>-->
+
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Software Engineer. Music and Photography Hobbyist.
+                    </p>
+                    <p>
+                        I am a pre-med student turned software engineer with a boundless passion for all things technology. Bioinformatics research introduced me to writing software and I haven't stopped coding since.
+                    </p>
+                    <p>
+                        I'm always looking for a difficult problem to solve and I'm always eager to learn a new technology to add to my toolset. Currently fascinated with scalability and the collection, processing, aggregation, and serving of big data.
+                    </p>
+                    <p>
+                        Shoot me an email if you'd like to talk about software, technology, job opportunities, or music.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="Jul 2015 – Present">
+                <h3>Apteligent</h3>
+                <h4>Sr. Software Engineer (Data Platform Team)</h4>
+                <p>
+                    • Full-stack engineer on the data platform team, working primarily in Java, Scala, and Python (Flask).
+                </p>
+                <p>
+                    • Primarily tasked with writing Spark batch & streaming jobs, scheduling jobs in Azkaban, setting up and maintaining Kafka infrastructure, building out data processing pipelines, building out and maintaining our Cassandra cluster, and writing the API to serve our data.
+                </p>
+                <p>
+                    • Often tasked to work in other components of our stack, including JavaScript UI frameworks (supporting legacy Backbone.js framework and building new features in our React framework), JavaScript API services (Node.js and Express), and Ruby (Chef configuration management).
+                </p>
+                <p>
+                    • Consolidated two separate collection and Kafka storage pipelines into a single pipeline, saving approximately 40% on monthly costs in AWS EC2 and EBS for the two tiers.
+                </p>
+                <p>
+                    • Redesigned and implemented Apteligent's integration with Zuora.
+                </p>
+                <p>
+                    • Assisting the SDK Agent team with work on Crittercism's iOS and Unity SDKs.
+                </p>
+                <p>
+                    • Led the development effort in moving deployment of internal services to Docker.
+                </p>
+                <p>
+                    • Manage deployments of services in production and pre-production environments. Responsible for setting up infrastructure in AWS and configuration management in Chef, as well as Consul for service discovery.
+                </p>
+            </div>
+
+            <div data-date="Aug 2014 - Jul 2015">
+                <h3>Apteligent (Formerly Crittercism)</h3>
+                <h4>Software Engineer (Full-Stack Team)</h4>
+                <p>
+                    • Worked primarily on the front-end customer portal and user interface.
+                </p>
+                <p>
+                    • Involved in the design and implementation of features and solutions for the portal, platform APIs, and other systems to support a large scale multi-tenant SaaS application.
+                </p>
+                <p>
+                    • Collaborated with product owners to develop both private and public APIs.
+                </p>
+                <p>
+                    • Designed and developed front-end architectures and implemented business logic to support critical customer use cases including account management, usage monitoring, and billing.
+                </p>
+                <p>
+                    • Partnered with platform teams to ensure the maintenance of optimal customer portal and platform API strategies, standards, and best practices.
+                </p>
+                <p>
+                    • Promoted in July 2015 after 11 months.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of California, Davis</h3>
+            <span class="education-date">September 2009 - June 2012</span>
+            <h4>Bachelor of Science (B.S.) in Molecular and Cellular Biology</h4>
+            <p>
+                Dean's List - Fall 2009.
+            </p>
+            <p>
+                Pre-Medical track, with original intention to go to medical school.
+            </p>
+
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="skills" class="background-alt">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>Scala</li>
+            <li>Spark</li>
+            <li>Kafka</li>
+            <li>Cassandra</li>
+            <li>Azkaban</li>
+            <li>AWS</li>
+            <li>Chef</li>
+            <li>Docker</li>
+            <li>Jenkins</li>
+            <li>Node.js</li>
+            <li>React</li>
+            <li>Backbone.js</li>
+            <li>Mongo</li>
+            <li>Redis</li>
+            <li>Memcached</li>
+            <li>RabbitMQ</li>
+            <li>DynamoDB</li>
+            <li>Postgres</li>
+            <li>Ruby on Rails</li>
+            <li>Sinatra</li>
+            <li>C#</li>
+            <li>Swift</li>
+            <li>Objective-C</li>
+            <li>Unity</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="https://formspree.io/amdziuk@gmail.com">
+                <input type="hidden" name="_subject" value="Contact request from personal website" />
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; Adam Dziuk
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/amdziuk" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/amdziuk/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="mailto:amdziuk@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
+
 </html>
